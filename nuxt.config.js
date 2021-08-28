@@ -48,6 +48,12 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    babel: {
+      plugins: [
+        '@babel/plugin-proposal-decorators',
+        { legacy: true, decoratorsBeforeExport: true }
+      ]
+    }
     // extend(config, ctx) {}
   }
 }

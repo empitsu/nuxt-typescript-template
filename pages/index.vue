@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <VName user="{firstName:'kaneno',lastName:0}"></VName>
     <div>
       <logo />
       <h1 class="title">
@@ -26,10 +27,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import VName from '~/components/VName.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    VName
   }
 }
 </script>
